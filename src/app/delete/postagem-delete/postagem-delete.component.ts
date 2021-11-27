@@ -27,10 +27,10 @@ export class PostagemDeleteComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0);
 
-    if (environment.token == '') {
-      // this.alertas.showAlertInfo('Seu token expirou, faça o login novamente.')
-      this.router.navigate(['/login']);
-    }
+    // if (environment.token == '') {
+    //   // this.alertas.showAlertInfo('Seu token expirou, faça o login novamente.')
+    //   this.router.navigate(['/login']);
+    // }
     this.postagemService.refreshToken()
     this.idPostagem = this.route.snapshot.params['id'];
     this.findByIdPostagem(this.idPostagem);

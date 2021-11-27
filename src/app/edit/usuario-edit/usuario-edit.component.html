@@ -184,7 +184,6 @@
 
 
               <div class="text-center mb-4" *ngFor="let item of usuario.postagens | orderBy : key : reverse">
-                <!--  | orderBy : key : reverse" -->
                 <div class="wrapper">
                   <div class="p-3">
                     <div class="row">
@@ -222,7 +221,7 @@
                               <a class="dropdown-item" data-toggle="modal" data-target="#deletePostagem"
                                 (click)="getPostagemById(item.idPostagem)">Deletar</a>
 
-                              <!-- <a class="dropdown-item" [routerLink]="['/postagem-delete', item.idPostagem]">Apagar</a> -->
+                              <a class="dropdown-item" [routerLink]="['/postagem-delete', item.idPostagem]">Apagar</a>
 
                             </div>
                           </div>
@@ -243,7 +242,7 @@
 
                         <div class="row mt-3">
                           <div class="col-md-12">
-                            <img src="{{ item.foto }}" alt="" width="90%" />
+                            <img src="{{ item.foto }}" alt="" width="80%" />
                           </div>
                         </div>
 
